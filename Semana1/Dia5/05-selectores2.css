@@ -1,0 +1,28 @@
+/*De todos los li en un mismo nivel, aplicar el estilo al de la posicion2*/
+li:nth-child(2){
+    color: green;
+}
+li:first-child{
+    color:blue ;
+}
+li:last-child{
+    background-color: burlywood;
+}
+/*odd-even*/
+tbody tr:nth-child(odd){
+background-color: darkseagreen;
+}
+tbody tr:nth-child(even){
+    background-color: dimgrey;
+    }
+
+input:not(.colores){
+    border-radius: 10px;
+}
+input:not([type="text"]){
+    border-radius: 10px;
+}
+input[type="text"]{
+    background:red;
+}    
+

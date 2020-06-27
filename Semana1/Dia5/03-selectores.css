@@ -1,0 +1,19 @@
+/*Selector de Etiqueta*/
+/*Todos los h2 de la pagina*/
+label{
+color: teal;
+}
+/*compartiendo atributos*/
+/*estilo que afecta a todos los h1 y h2*/
+h2,h1{
+    background-color: yellow;
+}
+/*Selector de hijos a cualquier nivel*/
+/*todos los li que de alguna forma se encuentren dentro del ul*/
+ul li{
+color: blue;
+}
+/*Selector de hijos directos o de primer nivel*/
+ol > li{
+    color: brown;
+}
