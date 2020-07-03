@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.section1 {
+  height: 500px;
+  width: 500px;
+  border: 1px solid steelblue;
+  margin: 50px auto 0 auto;
+}
+.cuadrado {
+  width: 100px;
+  height: 100px;
+  background-color: violet;
+  /* transform: scale(2); */
+  transform: rotate(45deg);
+}
+.cuadrado:hover {
+  transform: scale(1.3);
+  filter: blur(5px);
+}
+.circulo {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: darkblue;
+  transform: translate(50px, -50px);
+}

@@ -1,0 +1,38 @@
+*{
+ margin: 0;
+ box-sizing: border-box;
+}
+.section1 {
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: #bbb 0px 0px 20px;
+    margin: 50px auto 0 auto;
+   text-align: center;
+  }
+.button1{
+margin-top: calc(250px - 20px);
+border: none;
+outline: none;
+border-radius: 20px;
+padding: 10px 15px;
+background: -webkit-linear-gradient(top, #000428, #004292 );
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+animation: animaboton 2s ease-in 0.1s infinite normal none;;
+}
+/* Creando una animacion */
+@keyframes animaboton{
+ 0%{
+    padding: 10px 15px;
+ }
+ 50%{
+    padding: 10px 50px;
+ }
+ 80%{
+    transform: perspective(10px) 
+ }
+ 100%{
+    padding: 10px 15px;
+ }
+}
