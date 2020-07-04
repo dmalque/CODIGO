@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+/* definiendo variables */
+:root {
+  --naranja: rgb(255, 185, 75);
+  --rosado: rgb(255, 82, 163);
+}
+header {
+  height: 60px;
+  background: -webkit-linear-gradient(right, var(--naranja), var(--rosado));
+}
+
+.principal {
+  margin: 50px auto 0 auto;
+  width: 50%;
+  height: 900px;
+  box-shadow: #77f 0px 0px 20px;
+  position: relative;
+}
+.section1 {
+  width: 100px;
+  height: 100px;
+  background-color: var(--naranja);
+  /* static -> no se puede mover no modificar su posicion */
+  /* relative -> el elmento esta listo para moverse */
+  position: relative;
+  /* mover n pixeles desde la izquierda */
+  left: 50px;
+  /* mover n pixeles desde el techo de su posicion original */
+  top: 50px;
+  /* para que se vea sobre el section2 */
+  z-index: 2;
+}
+.section2 {
+  width: 100px;
+  height: 100px;
+  background-color: var(--rosado);
+  /* static -> no se puede mover no modificar su posicion */
+  /* relative -> el elmento esta listo para moverse */
+  position: relative;
+  /* para que se vea debajo el section1 */
+  z-index: 1;
+}
+.section3 {
+  width: 100px;
+  height: 100px;
+  background-color: var(--naranja);
+  /* static -> no se puede mover no modificar su posicion */
+  /* relative -> el elmento esta listo para moverse */
+  position: relative;
+  /* ---- */
+  left: 100%;
+}
+.texto {
+  color: yellowgreen;
+}
+/* boton de accion flotante -- float action button */
+.fab {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 50%;
+  background: -webkit-linear-gradient(top, var(--rosado), var(--naranja));
+  font-size: 2rem;
+  /* cuando la posicion es absoluta  es recomendable q el padre de elemento tenga posicion relativa para q se mueva respecto de este; */
+  /* cuando la posicion es absoluta los elementos hermano no respetan la posicion original del elemento q se esta moviendo */
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  transition: all 1s ease-in;
+}
+.margen{
+    margin-right: 60px;
+    margin-bottom: 60px;
+}
+.izquierdo{
+    left: 60px;
+    bottom: 60px;
+    box-shadow:var(--rosado) 0px 0px 20px;
+    /* fixed-> posicionamiento de un elemento respecto del Viewport(area visible del navegador) */
+    position: fixed;
+}
+.fab:hover{
+    transform: scale(2);
+}
