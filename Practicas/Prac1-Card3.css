@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #EBEBEB;
+}
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  padding: 15px;
+  width: 950px;
+}
+.card {
+  width: 50%;
+  /* height:450px; */
+  background: #dad8d8;
+  padding:0px;
+  display: inline-block;
+  margin: 30px;
+}
+.card1__imagen{
+    display: flex;
+    padding: 18px;
+   
+    /* width: 100%;
+    height:100%; */
+}
+.card2__imagen{
+  height: 400px;
+  /* display: flex; */
+  
+  padding: 20px;
+
+}
+.card1__precio{
+    color: #82CCB4;
+ 
+    cursor: pointer;
+    display: inline-block;
+}
+.card1__descripcion{
+font-family: 'Lato', sans-serif;
+background:#FCFFFC ;
+padding: 30px 25px 20px 30px;    
+}
+.card1__descripcion h2{
+display: inline-block;   
+}

@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #01e37f;
+}
+h4 {
+  color: rgb(207, 205, 205);
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+span {
+  vertical-align: middle;
+  color: #ff6365;
+}
+
+.principal {
+  width: 55%;
+  height: 550px;
+  background-color: #fff;
+  margin: 50px auto 0px auto;
+  border-radius: 1%;
+  border: 0.1 solid gray;
+}
+.section1 {
+  width: 50%;
+  height: 400px;
+  box-shadow: #aaa 0px 0px 20px;
+  background: -webkit-radial-gradient(center, #fff, #a1e510);
+  position: relative;
+  left: -40px;
+  margin-top: 30px;
+  border-radius: 1%;
+  display: inline-block;
+}
+.section1__Mazana {
+  width: 110%;
+  height: 350px;
+  position: relative;
+  left: -50px;
+  filter: drop-shadow(rgb(70, 68, 68) 1px 10px 10px);
+}
+.section1__Mazana:hover {
+    cursor: pointer;
+       filter: drop-shadow(rgb(224, 245, 174) 1px 10px 10px);
+  }
+.icono1 {
+  margin: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+.icono2 {
+  color: #fff;
+  right: 10px;
+  top: 10px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.section1__footer {
+  text-align: center;
+  background: honeydew;
+  margin-bottom: 0;
+}
+.section1_manzanas {
+  width: 80px;
+  height: 80px;
+  border: 1px solid rgb(157, 187, 241);
+  margin: 2px;
+  cursor: pointer;
+}
+.section2 {
+  width: 20%;
+  height: 490px;
+  /* background-color: green; */
+  position: absolute;
+  display: inline-block;
+  margin-top: 30px;
+  text-align: left;
+}
+.section2__h2 {
+  padding: 10px 0px;
+  font-size: 2rem;
+  font-family: "Ubuntu", sans-serif;
+}
+.precio {
+  margin: 25px 0px;
+}
+.section2__precio {
+  font-size: 5rem;
+}
+.section2__bloquemanzanas {
+  margin: 8px 0px 28px 0px;
+}
+.section2_manzanas {
+  width: 50px;
+  cursor: pointer;
+  /* transition: ease-in; */
+  transition: all 0.2s linear;
+}
+.section2_manzanas:hover {
+  width: 55px;
+  border: 1px solid gray;
+}
+.boton {
+  background-color: #ff3f40;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  padding: 15px 40px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+.boton:hover {
+  background: linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+  background-color: #bc3315;
+}
+.boton:active {
+  position: relative;
+  top: 1px;
+}
+i {
+  width: 10px;
+  height: 10px;
+}
