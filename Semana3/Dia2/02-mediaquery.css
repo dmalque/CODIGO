@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #444;
+}
+/* . */
+
+/* Para todas las pantallas de dispositivos
+que ademas tengan un maximo de ancho 1024px */
+@media screen and (max-width: 1024px) {
+  body {
+    background-color: darkmagenta;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    background-color: darkred;
+  }
+}
+@media screen and (max-width: 480px) {
+  body {
+    background-color: deepskyblue;
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    background-color: forestgreen;
+  }
+}
