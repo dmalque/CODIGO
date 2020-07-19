@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+body {
+  width: 90%;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  background-color: beige;
+  height: 60px;
+}
+header div {
+  flex: 1;
+  display: flex;
+  background-color: aqua;
+  justify-content: center;
+  align-items: center;
+  border: brown solid 1px;
+}
+nav {
+  flex: 1;
+}
+nav ul {
+  display: flex;
+  /* height: 60px; */
+  list-style: none;
+}
+.barra__li{
+    padding: 0px 10px;
+    /* justify-content: center;
+    align-items: center; */
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+}
+.barra__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
