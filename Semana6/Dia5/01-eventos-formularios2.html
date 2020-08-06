@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="./data-usuarios.js"></script>
-    <script src="./02-eventos-formularios.js"></script>
+    <script src="./data-lugares.js"></script>
     <title>Document</title>
     <style>
       body {
@@ -38,18 +37,17 @@
     </style>
   </head>
   <body>
-    <form id="formulario">
+    <form>
       <p>
-        <label>Usuario</label>
-        <input type="email" id="inputEmail" placeholder="Ingrese su correo" />
-        <small id="helperEmail"></small>
+        <label>Pais:</label>
+        <select name="" id="selectPais"></select>
       </p>
       <p>
-        <label>Contraseña</label>
-        <input type="password" id="inputPassword" />
+        <label>Departamento</label>
+        <select name="" id="selectDepartamento"></select>
       </p>
-      <button type="submit">Iniciar Sesión</button>
-      <a href="https://www.google.com" id="enlace">¿Olvidaste tu contraseña?</a>
     </form>
+
+    <script src="./01-eventos-formulario2.js"></script>
   </body>
 </html>
