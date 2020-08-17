@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -145,6 +149,7 @@ body {
   justify-content: space-evenly;
 }
 .container .tabla .pedido .carta__plato {
+  position: relative;
   cursor: pointer;
   color: #ddd;
   transition: 1s all ease;
@@ -209,7 +214,8 @@ body {
   margin-top: -5px;
   font-size: 0.9rem;
 }
-.container .tabla .pedido .boleta .comanda__cantidad, .container .tabla .pedido .boleta .comanda__precio {
+.container .tabla .pedido .boleta .comanda__cantidad,
+.container .tabla .pedido .boleta .comanda__precio {
   flex: 25%;
   text-align: center;
 }
@@ -234,7 +240,20 @@ body {
   border: 1px solid #ff9c63;
   color: #ff9c63;
 }
-.btn-outline-primary:hover, .btn-outline-primary.active {
+.btn-outline-primary:hover,
+.btn-outline-primary.active {
   background-color: #ff9c63;
   color: #ddd;
 }
+
+.carta__botones {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-sumar{
+  margin-left: 10px;
+}
+
